@@ -1,0 +1,323 @@
+body{
+    margin:0px;
+    /* font-family:sans-serif; */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:30px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+#body-header{
+    
+    background-image:url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    opacity:0.8rem;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height:55vh;
+    padding-top:1.2rem;   
+}
+/* Navigation bar */
+#body-header nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:10;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.horizantal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin:0px;
+}
+
+.horizantal-list li{
+    display:inline-block;
+    margin :0px 8px 8px 0;
+    font-weight:100;
+    font-size:1.3rem;
+}
+.horizantal-list li a{ 
+   color:white;
+   text-decoration:none; 
+}
+.text-center{
+    text-align:center;
+}
+.nav-menu li a{
+    transition: color 0.5,border bottom 4s;
+}
+.nav-menu li a:hover{
+    
+    color:lightgrey;
+    border-bottom: 1px solid white;
+    
+}
+/* Name Container */
+#name-container{
+    padding-top: 15vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i{
+    padding:10px;
+    font-size:1rem;
+
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+    font-size:2rem;
+}
+#about{
+    height:auto;
+    width:100%;
+   
+    padding:10px;
+
+}
+#my-image{
+    width:12rem;
+    height:12rem;
+    margin:auto;
+    margin-top:-12vh;
+}
+#my-image img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    border:3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+#about-para {
+    padding: 20px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+  }
+
+/* Skills section */
+
+#skills{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.section-heading{
+    width:auto;
+    padding:20px;
+    margin:auto;
+    font-weight:400;
+}
+.section-heading span{
+    font-size:40px;
+    color: #2857a4;
+    display:inline-block;
+    margin:0.5rem;
+}
+.skills-display{
+    width:70%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin:auto;
+    /* padding:20px; */
+}
+.skill-name{
+    /* border:1px solid black; */
+    background-color:#2857a4 ;
+    color:white;
+    border-radius:0.8rem;
+    padding:10px;
+    font-size:medium;
+    margin: 10px;
+}
+
+
+/* Contact Section */
+#Contact{
+    height:auto;
+    width:auto;
+    background-image: linear-gradient( #2857a4, #403066);
+    color:white;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    padding:20px;
+}
+.contact-box{
+    display:flex;
+    justify-content: space-around;
+
+}
+.contact-heading{
+    font-size:2rem;
+    font-weight:normal;
+    margin:auto;
+    padding:10px;
+}
+.form-container{
+    padding:10px;
+
+}
+.form-field{
+    border:0;
+    border-bottom:2px solid #4e4e9d;
+    margin-bottom: 10px; 
+    width:100%;
+    background-color: transparent;
+    color: white;
+}
+.form-field:focus {
+    outline: none;
+    border-bottom-color: #e0e0e0; /* Adjust for focus color */
+  }
+.contact-address{
+    
+    font-size: medium;
+
+}
+
+/* Experience Section */
+
+#Experience{
+    display:flex;
+    flex-direction: column;
+}
+
+.experience-box{
+    width:75%;
+    margin:auto;
+}
+.designation{
+    color:#2857a4;
+    margin:0;
+}
+.company-name{
+    color:#696969;
+    font-size: small;
+    margin:0;
+}
+.job-timeline{
+    font-size:small;
+    margin:0;
+    color:tomato;
+}
+.job-description{
+    font-size: small;
+    color:grey;
+}
+.timeline-dashed{
+    position:absolute;
+    height:75%;
+    width:0;
+    border:2px dashed black;
+    height:25%;
+    left:10%;
+    margin-top: 9%;
+    
+}
+.traveller{
+    position:sticky;
+    transform: rotate(90deg);
+}
+
+/* Project Section */
+#Projects{
+    display:flex;
+    flex-direction: column;
+}
+.project-box{
+    width:75%;
+    margin:auto;
+}
+.project-name{
+    color:#2857a4;
+    margin:0;
+}
+.project-description{
+    color:grey;
+    font-size: small;
+}
+
+/* Education */
+
+#Education{
+    display:flex;
+    flex-direction: column;
+}
+.education-box{
+    width:75%;
+    margin:auto;
+    padding:10px;
+}
+.degree{
+    color:#2857a4;
+    margin:0;  
+}
+.university-name{
+    color:#696969;
+    font-size: small;
+    
+}
+.education-timeline{
+    font-size:small;
+    margin:0;
+    color:tomato;
+
+}
+
+/* Certifications */
+#Certifications{
+    display:flex;
+    flex-direction: column;
+}
+.certifications-list{
+    width:75%;
+    margin:auto;
+    color:grey;
+    font-size: medium;
+}
+
+
+/* Alternate section color ---Pseudo Classes*/
+section:nth-child(2n+1){
+    background-color:white;
+}
+section:nth-child(2n){
+    background-color:lightgrey;
+}
+
+/* Common margin bottom class */
+.mb75px{
+    margin-bottom:25px;
+}
+
+/* Button Class */
+.button-class{
+    color:blue;
+    background-color: white;
+    border:0;
+}
+
+section{
+    padding-bottom:10px;
+}
